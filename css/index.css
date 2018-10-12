@@ -1,0 +1,1439 @@
+@import url('base.css');
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #999;
+}
+body {
+	background-color: #f5f5f5;
+}
+/*顶部开始*/
+.top {
+	width: 100%;
+	height: 32px;
+	border-bottom: 1px solid #e5e5e5;
+	background: #f2f2f2;
+	margin: 0 auto;
+}
+.top-box {
+	width: 1230px;
+	height: 32px;
+	line-height: 32px;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #999;
+}
+/*顶部左开始*/
+.tb-left {
+	width: 218px;
+	/*line-height: 32px;*/
+	float: left;
+	font-family: "Microsoft YaHei";
+}
+.tb-left p {
+	width: auto;
+	height: auto;
+	float: left;
+}
+.tb-left a:nth-of-type(1) {
+	float: left;
+	color: #999;
+	padding: 0 10px 0 20px;
+}
+.tb-left a:nth-of-type(2) {
+	float: left;
+	color: #999;
+	padding: 0 10px;
+}
+.tb-left a:hover {
+	color: #FF0036;
+}
+/*顶部左结束*/
+
+/*顶部右开始*/
+.tb-right {
+	width: 531px;
+	height: 32px;
+	float: right;
+}
+.tb-right li {
+	display: inline-block;
+	float: left;
+	height: 32px;
+}
+/*我的淘宝开始*/
+.tb-right1 {
+	width: 72px;
+	border-left: 1px solid #f2f2f2;
+	border-right: 1px solid #f2f2f2;
+	position: relative;
+}
+.tb-right1:hover {
+	background-color: #fff;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	height: 33px;
+}
+.tb-right1:hover .tb-right1-n {
+	display: block;
+}
+.tb-right1:hover .mytb {
+	color: #FF0036;
+	text-decoration: underline;
+}
+.tb-right1:hover i {
+	transform:rotate(180deg);
+	transition:all .1s .1s linear;
+}
+.tb-right1>a {
+	padding-left: 10px;
+	color: #999;
+	float: left;
+}
+.tb-right1 i {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 32px;
+}
+.tb-right1-n {
+	display: none;
+	width: 74px;
+	padding: 8px 10px;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	background-color: #fff;
+	position: absolute;
+	left: -1px;
+	top: 33px;
+	z-index: 999;
+}
+.tb-right1-n:hover .mytb {
+	text-decoration: overline;
+}
+.tb-right1-n a {
+	display: block;
+	font-size: 12px;
+	line-height: 20px;
+	color: #666;
+	text-decoration: none;
+}
+.tb-right1-n a:hover {
+	color: #FF0036;
+	text-decoration: underline;
+}
+/*我的淘宝结束*/
+
+/*购物车开始*/
+.tb-right2 {
+	padding: 0 9px;
+}
+.tb-right2 i {
+	font-size: 12px;
+	color: #FF0036;
+}
+.tb-right2 a {
+	font-size: 12px;
+	display: inline-block;
+}
+.tb-right2 span {
+	color: #666;
+	font-weight: 700;
+	font-family: Arial;
+	text-align: center;
+}
+.tb-right2 a:hover {
+	color: #FF0036;
+}
+.tb-right2 a:hover span {
+	color: #FF0036;
+}
+/*购物车结束*/
+
+/*收藏夹开始*/
+.tb-right3 {
+	width: 62px;
+	border-left: 1px solid #f2f2f2;
+	border-right: 1px solid #f2f2f2;
+	position: relative;
+}
+.tb-right3:hover {
+	background-color: #fff;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	height: 33px;
+}
+.tb-right3:hover .tb-right1-n {
+	display: block;
+}
+.tb-right3:hover .mytb {
+	color: #FF0036;
+	text-decoration: underline;
+}
+.tb-right3:hover i {
+	transform:rotate(180deg);
+	transition:all .1s .1s linear;
+}
+.tb-right3>a {
+	padding-left: 10px;
+	color: #999;
+	float: left;
+}
+.tb-right3 i {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 32px;
+}
+.tb-right3 .tb-right1-n {
+	display: none;
+	width: 62px;
+	padding: 8px 10px;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	background-color: #fff;
+	position: absolute;
+	left: -1px;
+	top: 33px;
+	z-index: 999;
+}
+.tb-right1-n:hover .mytb {
+	text-decoration: overline;
+}
+.tb-right3 .tb-right1-n a {
+	display: block;
+	font-size: 12px;
+	line-height: 20px;
+	color: #666;
+	text-decoration: none;
+}
+.tb-right3 .tb-right1-n a:hover {
+	color: #FF0036;
+	text-decoration: underline;
+}
+/*收藏夹结束*/
+
+/*竖线开始*/
+.tb-right4 {
+	width: 1px;
+	height: 14px;
+	line-height: 32px;
+	margin: 0 2px 0 5px;
+	color: #ccc;
+}
+/*竖线结束*/
+
+/*手机版开始*/
+.tb-right5 {
+	padding: 0 10px;
+	position: relative;
+}
+.tb-right5 i {
+	font-size: 12px;
+	color: #FF0036;
+}
+.tb-right5 a {
+	font-size: 12px;
+	display: inline-block;
+}
+.tb-right5 a:hover {
+	color: #FF0036;
+}
+.tp-right5-n {
+	display: none;
+	position: absolute;
+    width: 175px;
+    height: 227px;
+    background: #fff;
+    left: -48px;
+    top: 26px;
+    box-shadow: 0 0 5px #aaa;
+	z-index: 999;
+}
+.tp-right5-n-img {
+	width: 175px;
+    height: 175px;
+    margin: 5px 0 0px;
+    background: url(../img/EWM.png) 0 0 no-repeat;
+}
+.tp-right5-n p {
+	color: #999;
+	height: 35px;
+	margin: 0 15px;
+    line-height: 35px;
+    background: url(../img/EWMT.png) center bottom no-repeat;
+}
+.tb-right5:hover .tp-right5-n {
+	display: block;
+}
+/*手机版结束*/
+
+/*淘宝网开始*/
+.tb-right6 {
+	padding: 0 10px;
+}
+.tb-right6:hover a {
+	color: #FF0036;
+}
+/*淘宝网结束*/
+
+/*商家支持开始*/
+.tb-right7 {
+	width: 72px;
+	border-left: 1px solid #f2f2f2;
+	border-right: 1px solid #f2f2f2;
+	position: relative;
+}
+.tb-right7:hover {
+	background-color: #fff;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	height: 33px;
+}
+.tb-right7:hover .tb-right7-n {
+	display: block;
+}
+.tb-right7:hover .mytb {
+	color: #FF0036;
+	text-decoration: underline;
+}
+.tb-right7:hover i {
+	transform:rotate(180deg);
+	transition:all .1s .1s linear;
+}
+.tb-right7>a {
+	padding-left: 10px;
+	color: #999;
+	float: left;
+}
+.tb-right7 i {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 32px;
+}
+.tb-right7-n {
+	display: none;
+	width: 122px;
+	height: auto;
+	padding: 8px 10px;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	background-color: #fff;
+	position: absolute;
+	right: -1px;
+	left: auto;
+	top: 33px;
+	z-index: 999;
+}
+.tb-right7-n ul {
+	width: 122px;
+	margin-top: -5px;
+	overflow: hidden;
+}
+.tb-right7-n ul li {
+	height: auto;
+	padding: 5px 0;
+	display: block;
+	line-height: 1.4;
+	border-bottom: 1px dotted #827777;
+	margin-right: -20px;
+}
+.tb-right7-n ul li p {
+	color: #666;
+	font-weight: 700;
+}
+.tb-right7-n ul li a {
+	display: inline-block;
+	width: 48px;
+	margin-right: 20px;
+	font-size: 12px;
+	line-height: 22px;
+	color: #666;
+	text-decoration: none;
+}
+.tb-right7-n a:hover {
+	color: #FF0036;
+	text-decoration: underline;
+}
+/*商家支持结束*/
+
+/*网站导航开始*/
+.tb-right8 {
+	width: auto;
+	border-left: 1px solid #f2f2f2;
+	border-right: 1px solid #f2f2f2;
+	position: relative;
+}
+.tb-right8:hover {
+	background-color: #fff;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	height: 33px;
+}
+.tb-right8:hover #jt {
+	transform:rotate(180deg);
+	transition:all .1s .1s linear;
+}
+.tb-right8 a {
+	padding-left: 8px;
+	color: #999;
+	float: left;
+}
+.tb-right8 i {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 32px;
+}
+.tb-right8 #dh {
+	color: #FF0036;
+	font-size: 14px;
+}
+/*网站导航结束*/
+/*顶部右结束*/
+/*顶部结束*/
+
+/*头部开始*/
+.header {
+	width: 100%;
+	height: 130px;
+	background-color: #fff;
+}
+.header-box {
+	width: 1230px;
+	height: 130px;
+	margin: 0 auto;
+	position: relative;
+}
+.tmall {
+	width: 290px;
+	height: 130px;
+	float: left;
+	position: absolute;
+	left: -45px;
+	top: 0;
+	background-image: url(../img/Tmall.gif);
+}
+.search {
+	width: 625px;
+	height: 68px;
+	margin-left: 320px;
+	padding-top: 38px;
+	float: left;
+	overflow: hidden;
+}
+.search-box {
+	width: 623px;
+	height: 36px;
+	border: 2px solid #FF0036;
+	border-right: none;
+}
+input {
+	width: 483px;
+	height: 26px;
+	padding: 5px 3px 5px 5px;
+	float: left;
+}
+input[type="text"]:focus {
+    outline:none;
+}
+.search-box a {
+	display: inline-block;
+	float: left;
+	width: 132px;
+	height: 36px;
+}
+button {
+	width: 132px;
+	height: 36px;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #FF0036;
+	float: left;
+	color: #fff;
+}
+button:focus {
+	outline: none;
+}
+.search ul {
+	width: 625px;
+	height: 24px;
+	margin-left: -13px;
+	padding-top: 12px;
+	font-size: 14px;
+}
+.search ul li {
+	display: inline-block;
+    border-left: 1px solid #ccc;
+    padding: 0 12px;
+}
+.search ul .hong a {
+	color: #FF0036;
+}
+.search ul li a {
+	color: #999;
+}
+/*头部结束*/
+
+/*nav开始*/
+.nav-box {
+	width: 100%;
+	height: 35px;
+	border-bottom: 1px solid #FF0036;
+	background-color: #fff;
+}
+.nav {
+	width: 1230px;
+	margin: 0 auto;
+	position: relative;
+	/*left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;*/
+}
+/*商品分类开始*/
+.nav-L {
+	width: 200px;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sp-nav {
+	display: block;
+	height: 36px;
+    background-color: #FF0036;
+    color: #fff;
+    font-weight: bold;
+    line-height: 36px;
+    padding-left: 14px;
+    width: 186px;
+}
+.sp-nav i {
+	display: inline-block;
+	float: left;
+	margin-right: 8px;
+}
+.nav-list {
+	background-color: rgba(0, 0, 0, 0.55);
+    width: 200px;
+    height: 496px;
+    position: relative;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    z-index: 999;
+}
+.nav-list>li {
+	height: 31px;
+	line-height: 31px;
+	color: #fff;
+	font-size: 14px;
+	width: 186px;
+    padding-left: 14px;
+}
+.nav-list li a {
+	font-weight: bold;
+	color: #fff;
+}
+.nav-list li i {
+	color: #ccc;
+}
+.nav-list li:hover {
+	background-color: #fff;
+	color: #E54077;
+}
+.nav-list li:hover #fenlei {
+	color: #E54077;
+}
+.nav-list li:hover #dh {
+	color: #E54077;
+}
+.nav-list .list2:hover {
+	background-color: #fff;
+	color: #427DEF;
+}
+.nav-list .list2:hover #fenlei {
+	color: #427DEF;
+}
+.nav-list .list2:hover #dh {
+	color: #427DEF;
+}
+.nav-list .list3:hover {
+	background-color: #fff;
+	color: #6347ED;
+}
+.nav-list .list3:hover #fenlei {
+	color: #6347ED;
+}
+.nav-list .list3:hover #dh {
+	color: #6347ED;
+}
+.nav-list .list4:hover {
+	background-color: #fff;
+	color: #FA5C5C;
+}
+.nav-list .list4:hover #fenlei {
+	color: #FA5C5C;
+}
+.nav-list .list4:hover #dh {
+	color: #FA5C5C;
+}
+.nav-list .list5:hover {
+	background-color: #fff;
+	color: #F7A832;
+}
+.nav-list .list5:hover #fenlei {
+	color: #F7A832;
+}
+.nav-list .list5:hover #dh {
+	color: #F7A832;
+}
+.nav-list .list6:hover {
+	background-color: #fff;
+	color: #3BC7B0;
+}
+.nav-list .list6:hover #fenlei {
+	color: #3BC7B0;
+}
+.nav-list .list6:hover #dh {
+	color: #3BC7B0;
+}
+.nav-list-n {
+	display: none;
+	width: 873px;
+	height: 496px;
+	background-color: #FAFAFA;
+	position: absolute;
+	left: 200px;
+	top: 0;
+}
+.nav-list li:hover .nav-list-n {
+	display: block;
+}
+.nav-n-l {
+	width: 583px;
+	height: 478px;
+	background-color: #fff;
+	padding: 9px 30px;
+	float: left;
+	/*z-index: 999;*/
+	font-size: 12px;
+	line-height: 22px;
+}
+.nav-n-l li {
+	position: relative;
+}
+.nav-n-l .list-title {
+	width: 90px;
+	color: #333;
+	display: inline-block;
+	position: absolute;
+	top: 11px;
+	left: 0;
+}
+.nav-n-l .list-cap {
+	width: 482px;
+	display: inline-block;
+	padding: 12px 0 9px 7px;
+	border-bottom: 1px dashed #ccc;
+	margin-left: 90px;
+}
+.nav-n-l .list-cap a {
+	display: inline-block;
+	padding: 0 6px;
+	color: #666;
+}
+.nav-n-l .list-cap a:hover {
+	color: #E54077;
+}
+.nav-n-l .list-cap .cap2:hover {
+	color: #427DEF;
+}
+.nav-n-l .list-cap .cap3:hover {
+	color: #6347ED;
+}
+.nav-n-l .list-cap .cap4:hover {
+	color: #FA5C5C;
+}
+.nav-n-l .list-cap .cap5:hover {
+	color: #F7A832;
+}
+.nav-n-l .list-cap .cap6:hover {
+	color: #3BC7B0;
+}
+.nav-n-r {
+	width: 189px;
+	height: 482px;
+	margin: 10px 10px 0 0;
+	float: right;
+	overflow: hidden;
+}
+.nav-n-r .gg-list {
+	width: 93px;
+	height: 47px;
+	background-color: red;
+	float: left;
+	margin-right: 1px;
+	margin-bottom: 1px;
+	background-image: url(../img/gg.png);
+}
+/*商品分类结束*/
+/*导航开始*/
+.nav-R {
+	width: 860px;
+	height: 35px;
+	float: left;
+	margin-left: 200px;
+}
+.nav-R a {
+	height: 35px;
+    float: left;
+    padding: 0 8px;
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    line-height: 36px;
+    color: #333333;
+}
+.nav-R a:hover {
+	color: #FF0036;
+}
+.nav-R a img {
+	width: 100px;
+	height: 30px;
+	margin-top: 3px;
+}
+/*导航结束*/
+/*nav结束*/
+
+/*banner开始*/
+.banner {
+	width: 100%;
+	height: 496px;
+	/*background-color: red;*/
+}
+.swiper-container {
+	width: 100%;
+	height: 496px;
+}
+.banner img {
+	width: 100%;
+	height: 496px;
+}
+/*banner结束*/
+
+/*闪购开始*/
+.shangou-box {
+	width: 1230px;
+	height: 370px;
+	padding-right: 30px;
+	padding-top: 24px;
+	margin-left: 59px;
+}
+.shangou {
+	width: 1230px;
+	height: 370px;
+	color: #999;
+	font-family: "微软雅黑";
+}
+.shangou1 {
+	width: 234px;
+	float: left;
+	height: 370px;
+	margin-right: 13px;
+	background-color: #fff;
+	position: relative;
+}
+.sg-top {
+	height: 54px;
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+}
+.sg-top .text1 {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	line-height: 54px;
+	height: 18px;
+	margin-left: 10px;
+}
+.sg-top .text2 {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	line-height: 24px;
+	height: 44px;
+	margin-left: 10px;
+}
+.sg-top a {
+	position: absolute;
+    right: 14px;
+    top: 0;
+    width: 42px;
+    height: 54px;
+    line-height: 54px;
+    font-size: 16px;
+    color: #666;
+    padding-right: 14px;
+    background-image: url(../img/return.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+}
+.sg-img {
+	display: inline-block;
+	width: 234px;
+	height: 316px;
+}
+.sg-img:hover .img-zz {
+	display: block;
+}
+.img-zz {
+	display: none;
+	position: absolute;
+	top: 55px;
+	left: 0;
+	width: 234px;
+	height: 370px;
+	background-color: rgba(255,255,255,0.3);	
+}
+.shangou2 {
+	width: 485px;
+	float: left;
+	height: 370px;
+	margin-right: 13px;
+	background-color: #fff;
+	position: relative;
+}
+.shangou2 .sg-img {
+	display: inline-block;
+	width: 485px;
+	height: 316px;
+}
+.shangou2 .img-zz {
+	position: absolute;
+	top: 55px;
+	left: 0;
+	width: 485px;
+	height: 370px;
+	background-color: rgba(255,255,255,0.4);	
+}
+.shangou3 {
+	width: 485px;
+	float: left;
+	height: 370px;
+	background-color: #fff;
+	position: relative;
+}
+.shangou3 .sg-img {
+	display: inline-block;
+	width: 485px;
+	height: 316px;
+}
+.shangou3 .img-zz {
+	position: absolute;
+	top: 55px;
+	left: 0;
+	width: 485px;
+	height: 370px;
+	background-color: rgba(255,255,255,0.4);	
+}
+/*闪购结束*/
+
+/*广告1开始*/
+.ad-box {
+	width: 1230px;
+	height: 327px;
+	margin: 15px 0 0 59px;
+	padding-right: 28px;
+}
+.ad {
+	width: 1232px;
+	height: 327px;
+}
+.ad li {
+	width: 122px;
+	height: 108px;
+	margin: 0 1px 1px 0;
+	float: left;
+	position: relative;
+	background-color: #fff;
+	text-align: center;
+	line-height: 145px;
+}
+#last {
+	position: relative;
+	color: #999;
+	display: inline-block;
+	width: 122px;
+	height: 108px;
+	background: #fff;
+}
+#last i {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 30px;
+	left: 45px;
+	font-size: 30px;
+}
+#last span {
+	display: block;
+    font-size: 14px;
+    line-height: 160px;
+    text-align: center;
+}
+#last:hover {
+	background: #ff0036;
+	color: #fff;
+}
+#last:hover i {
+	transform:rotate(360deg);
+	transition:transform .3s .3s linear;
+}
+.ad li:hover a {
+	display: block;
+}
+.ad li img {
+	display: inline-block;
+	width: 82%;
+	height: 50px;
+}
+.ad li a {
+	display: none;
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s linear;
+    color: #fff;
+}
+.ad-text1 {
+	width: 122px;
+	height: 60px;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	line-height: 90px;
+}
+.ad-text1 span {
+	display: block;
+	padding: 0 5px;
+	/*margin-top: 39px;*/
+}
+.ad-text2 {
+	width: 122px;
+	height: 32px;
+	color: #fff;
+	font-size: 12px;
+}
+.ad-text2 span {
+	display: block;
+    color: #fff;
+    width: 63px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 15px;
+    background-color: #FF0036;
+    border-radius: 9px;
+    margin: 0 auto;
+    margin-top: 7px;
+}
+/*广告1结束*/
+
+/*天猫超市开始*/
+.mart {
+	width: 1230px;
+	height: 665px;
+	margin-top: 30px;
+	margin-left: 59px;
+}
+.mart-top {
+	width: 100%;
+	height: 28px;
+}
+.mart-top img {
+	width: 214px;
+	height: 25px;
+	margin-top: 3px;
+	float: left;
+}
+.mart-nav {
+	width: 800px;
+	height: 28px;
+	float: right;
+}
+.mart-nav a {
+	display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    margin: 4px 10px;
+    font-size: 14px;
+    float: right;
+    color: #333;
+}
+.mart-nav a:hover {
+    border-bottom: 1px solid #333;
+}
+.mart-list {
+	width: 100%;
+	height: 618px;
+	margin-top: 10px;
+}
+.listL {
+	width: 235px;
+	height: 618px;
+	float: left;
+	position: relative;
+}
+.listL .text {
+	position: absolute;
+	width: 218px;
+	height: 64px;
+	bottom: 20%;
+}
+.listL .text .text1 {
+	background: rgba(0, 0, 0, 0.9);
+	width: 70px;
+    height: 64px;
+    overflow: hidden;
+    color: #FFFFFF;
+    text-align: center;
+}
+.listL .text .text1 span {
+	margin-top: 8px;
+	display: inline-block;
+    line-height: 24px;
+    font-size: 18px;
+    width: 36px;
+}
+.listL .text .text2 {
+	left: 70px;
+    top: 0px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    width: 128px;
+    height: 64px;
+    color: #FFFFFF;
+}
+.listL .text .text2 span {
+	margin-top: 7px;
+	margin-left: 10px;
+	display: block;
+    line-height: 20px;
+    font-size: 18px;
+}
+.listL .wrap {
+	width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.listL .wrap img {
+	position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+}
+.martL-zz {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 235px;
+	height: 618px;
+	background-color: rgba(255,255,255,0.4);
+}
+.listL:hover .martL-zz {
+	display: block;
+}
+.listR {
+	width: 995px;
+	height: 618px;
+	float: left;
+}
+.listR a {
+	display: inline-block;
+	width: 233px;
+	height: 300px;
+	margin-left: 13px;
+	border: 1px solid #fff;
+	float: left;
+	position: relative;
+	margin-bottom: 14px;
+	background-color: #fff;
+}
+.listR img {
+	width: 185px;
+	height: 185px;
+	margin: 20px auto 0;
+}
+.listR .Rtext1 {
+	width: 135px;
+    height: 40px;
+    font-size: 14px;
+    color: #333333;
+    line-height: 20px;
+    overflow: hidden;
+    margin: 8px auto;
+}
+.listR .Rtext2 {
+	width: 234px;
+	height: 18px;
+	font-size: 18px;
+    color: #FF0036;
+    line-height: 18px;
+    text-align: center;
+}
+.listR a:hover {
+	border: 1px solid #FF0036;
+}
+.listR-zz {
+	display: none;
+	width: 233px;
+	height: 303px;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	background-color: rgba(255,255,255,0.4);
+}
+.listR a:hover .listR-zz {
+	display: block;
+}
+/*天猫超市结束*/
+
+/*天猫国际开始*/
+.guoji-list {
+	width: 100%;
+	height: 618px;
+	margin-top: 10px;
+}
+.guoji-list a {
+	display: inline-block;
+	width: 233px;
+	height: 300px;
+	margin-left: 13px;
+	border: 1px solid #fff;
+	float: left;
+	position: relative;
+	margin-bottom: 14px;
+	background-color: #fff;
+}
+#fen {
+	margin-left: 0;
+}
+#fen .text {
+	position: absolute;
+	width: 218px;
+	height: 64px;
+	bottom: 20%;
+}
+#fen .text .text1 {
+	background: rgba(0, 0, 0, 0.9);
+	width: 70px;
+    height: 64px;
+    overflow: hidden;
+    color: #FFFFFF;
+    text-align: center;
+}
+#fen .text .text1 span {
+	margin-top: 8px;
+	display: inline-block;
+    line-height: 24px;
+    font-size: 18px;
+    width: 36px;
+}
+#fen .text .text2 {
+	left: 70px;
+    top: 0px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    width: 128px;
+    height: 64px;
+    color: #FFFFFF;
+}
+#fen .text .text2 span {
+	margin-top: 7px;
+	margin-left: 10px;
+	display: block;
+    line-height: 20px;
+    font-size: 18px;
+}
+#fen .wrap {
+	width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+#fen .wrap img {
+	position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+}
+.guoji-list a img {
+	width: 185px;
+	height: 185px;
+	margin: 20px auto 0;
+}
+.guoji-list a .Rtext1 {
+	width: 135px;
+    height: 40px;
+    font-size: 14px;
+    color: #333333;
+    line-height: 20px;
+    overflow: hidden;
+    margin: 8px auto;
+}
+.guoji-list a .Rtext2 {
+	width: 234px;
+	height: 18px;
+	font-size: 18px;
+    color: #FF0036;
+    line-height: 18px;
+    text-align: center;
+}
+.guoji-list a:hover {
+	border: 1px solid #FF0036;
+}
+.listR-zz {
+	display: none;
+	width: 233px;
+	height: 303px;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	background-color: rgba(255,255,255,0.4);
+}
+.guoji-list a:hover .listR-zz {
+	display: block;
+}
+/*天猫国际结束*/
+
+/*广告2开始*/
+.gg2 {
+	width: 1230px;
+	height: 90px;
+	margin-left: 59px;
+	margin-top: 10px;
+}
+/*广告2结束*/
+
+/*猜你喜欢开始*/
+.like {
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+}
+.like h2 {
+	width: 1230px;
+	color: #666;
+    text-align: center;
+    height: 43px;
+    font-weight: 100; 
+    margin-left: 59px;
+}
+.like h2 i {
+	color: #ff0036;
+}
+.like-list {
+	width: 1230px;
+    margin-left: 59px;
+    height: 303px;
+}
+.like-list a {
+	display: inline-block;
+	width: 233px;
+	height: 300px;
+	margin-left: 13px;
+	border: 1px solid #fff;
+	float: left;
+	position: relative;
+	margin-bottom: 14px;
+	background-color: #fff;
+}
+.like-list .first {
+	margin-left: 0;
+}
+.like-list img {
+	width: 185px;
+	height: 185px;
+	margin: 20px auto 0;
+}
+.like-list .Rtext1 {
+	width: 135px;
+    height: 40px;
+    font-size: 14px;
+    color: #333333;
+    line-height: 20px;
+    overflow: hidden;
+    margin: 8px auto;
+}
+.like-list .Rtext2 {
+	width: 234px;
+	height: 18px;
+	font-size: 18px;
+    color: #FF0036;
+    line-height: 18px;
+    text-align: center;
+}
+.like-list a:hover {
+	border: 1px solid #FF0036;
+}
+.like-list-zz {
+	display: none;
+	width: 233px;
+	height: 303px;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	background-color: rgba(255,255,255,0.4);
+}
+.like-list a:hover .listR-zz {
+	display: block;
+}
+.end {
+	width: 88px;
+	height: 45px;
+	margin: 15px auto;
+	background-image: url(../img/end.png);
+	background-repeat: no-repeat;
+	background-size: 88px 45px;
+}
+/*猜你喜欢结束*/
+
+/*底部开始*/
+.bottom {
+	width: 100%;
+	height: 585px;
+	border-top: 1px solid #d1d7dc;
+	text-align: center;
+	background-color: #fff;
+	position: relative;
+}
+.bottom1 {
+	width: 1190px;
+	height: 100px;
+	margin: 25px auto;
+	background: url(../img/bottom1.jpg) no-repeat;
+}
+.bottom1 a {
+	float: left;
+	display: block;
+	width: 297px;
+	height: 100px;
+}
+.bottom2 {
+	width: 1190px;
+	padding-top: 22px;
+	height: 190px;
+	margin: auto;
+	border-top: 1px solid #ededed;
+	background: url(../img/bottom2-hei.png) 45px bottom no-repeat;
+	background-size: 68px 25px;
+}
+.zdylist1 {
+	float: left;
+	width: 186px;
+	padding-left: 52px;
+}
+.zdylist1 dt {
+	color: #646464;
+    font-size: 16px;
+    font-weight: 700;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+}
+dd {
+	display: block;
+}
+.zdylist1 dd a {
+	display: block;
+	width: 100px;
+    overflow: hidden;
+    text-align: left;
+    height: 20px;
+    line-height: 20px;
+    color: #8b8b8b;
+    font-size: 12px;
+}
+.zdylist1 dd .zdyimg {
+	width: 105px;
+	height: 105px;
+}
+.zdyimg img {
+	width: 105px;
+	height: 105px;
+}
+.bottom3 {
+	width: 100%;
+	height: 201px;
+	border-top: 2px solid #FF0036;
+    background: #000;
+    text-align: left;
+}
+.bottom3 p {
+	display: block;
+	width: 1190px;
+	margin: 0 auto;
+	color: #fff;
+	height: 25px;
+	line-height: 25px;
+	padding: 5px 0;
+}
+.bottom3 p a {
+	font-size: 12px;
+	margin-right: 3px;
+	color: #fff;
+	height: 25px;
+	width: auto;
+	line-height: 25px;
+	text-align: left;
+	display: inline-block;
+}
+.footer {
+	width: 1190px;
+	height: 131px;
+	line-height: 20px;
+	background: #000;
+	color: #a4a4a4;
+	margin: 0 auto;
+	font-size: 12px;
+}
+.footer a {
+	margin-right: 65px;
+}
+.footer span {
+	margin-right: 65px;
+}
+.footer .gongan {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+.footer img {
+	width: 73px;
+	height: 34px;
+	vertical-align: middle;
+}
+/*底部结束*/
